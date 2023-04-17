@@ -16,9 +16,11 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 app.get('/img_list', (req, res) => {
     fs.readdir(path.join(__dirname, 'img/thumb'), (err, files) => {
         console.log('sending img_list')
-        files.sort()
-        files = files.reverse()
-        files.splice(50);
+        if(files !== undefined){
+            files.sort()
+            files = files.reverse()
+            files.splice(50);
+        }
         // console.log(files)
         res.send({ img_list: files });
     });
