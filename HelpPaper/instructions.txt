@@ -1,0 +1,29 @@
+Starting the program
+0. Connect to the same network as the pi
+1. Connect to the pi via ssh:
+ssh pi@192.168.0.222
+password: photopass
+2. open a tmux session
+tmux
+tmux instruction:
+ctrl + b -> % splits tab
+ctrl + b -> arrow keys to switch tab
+ctrl + b -> alt 1 makes horizontal even layout
+3. start the following three commands in separate tabs (from /Desktop/photobooth)
+serve -s client/build
+python3 python/camera.py
+npm start server.js
+4. dettach from the tmux session to keep it running in the backgroun
+ctrl + b -> d to dettach
+5. disconnect
+exit
+
+Other tricks
+# reattach to the runnin tmux session
+tmux attach
+# download folder from pi to your computer (file if removing flag -r)
+# (NOT run inside ssh session)
+scp -r pi@192.168.0.222:/home/pi/Desktop/photobooth/img/original .
+# download only missing files from pi to your computer
+# (NOT run inside ssh session)
+rsync -avz -e 'ssh' pi@192.168.0.222:/home/pi/Desktop/photobooth/img/original .
