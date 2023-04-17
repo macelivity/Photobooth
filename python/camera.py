@@ -7,7 +7,7 @@ import subprocess
 import gphoto2 as gp
 import re
 
-img_dir = '/home/pi/Desktop/photobooth/server/img'
+img_dir = 'home/fbg-bremen/Photobooth/server/img'
 original_dir = os.path.join(img_dir, 'original')
 thumb_dir = os.path.join(img_dir, 'thumb')
 MAX_THUMB_SIZE = (200, 200)
