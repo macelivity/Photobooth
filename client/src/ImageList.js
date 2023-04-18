@@ -41,7 +41,7 @@ class ImageList extends Component {
     };
     // fetching the GET route from the Express server which matches the GET route from server.js
     callBackendAPI = async () => {
-        const response = await fetch("http://192.168.178.121:5000/img_list", { mode: 'cors' });
+        const response = await fetch(HOST + "img_list", { mode: 'cors' });
         console.log(response)
         const body = await response.json();
         console.log(body)

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ImageList from './ImageList';
 
-export const HOST = "http://192.168.178.98:5000/"
+export const HOST = "http://192.168.178.121:5000/"
 export const WEDDING = { groom: "Dennis", bride: "Lidiya"}
 
 
