@@ -1,36 +1,55 @@
 .bgImg {
     position: absolute;
-    object-position: top left;
     z-index:-1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: calc(1.41421356 * 100vw);
+}
+
+
+.russian{
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+    z-index: 2;
+}
+
+.russian img{
+    width: 10vw;
+    height: 10vw;
 }
 
 
 *{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
-    font-size: 0.65cm;
-    line-height: 0.23cm;
+    font-size: 2.7vw;
+}
+
+p{
+    margin: 1vw 0;
 }
 
 
 .content{
-    padding: 3.5cm 3.5cm;
+    padding: 10.8vw 4vw;
     padding-bottom: 0;
-    width: 660px;
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 .titleText{
     text-align: center;
-    font-size: 1.3cm;
+    font-size: 4.8vw;
     font-weight: 650;
 }
 
 
 .grid-container{
     display: grid;
-    row-gap: 0.5cm;
-    margin-bottom: 1cm;
-    margin-top: 2.5cm;
+    row-gap: 3vw;
+    margin: 4.2vw 0;
 }
 
 
@@ -62,6 +81,11 @@
     justify-content: center;
     text-align: end;
 }
+.wifiQRCode img{
+    width: 20vw;
+    height: 20vw;
+}
+
 .wifiSecurity{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -71,7 +95,7 @@
     justify-content: center;
     text-align: start;
     
-    margin-top: 0.7cm;
+    margin-top: 3vw;
 }
 
 .websiteText{
@@ -83,7 +107,7 @@
     justify-content: start;
     text-align: start;
 
-    padding-top: 0.5cm;
+    padding-top: 1vw;
 }
 .websiteQRCode{
     grid-column-start: 1;
@@ -94,6 +118,11 @@
     justify-content: center;
     text-align: end;
 }
+.websiteQRCode img{
+    width: 18vw;
+    height: 18vw;
+}
+
 .websiteURL{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -103,7 +132,7 @@
     justify-content: center;
     text-align: start;
 
-    margin-top: 1cm;
+    margin-top: 3vw;
 }
 
 .disconnectText{
@@ -115,11 +144,11 @@
     justify-content: center;
     text-align: start;
 
-    padding-top: 0.5cm;
+    padding-top: 1vw;
 }
 
 .finalText{
-    margin-top: 1.3cm;
+    margin-top: 1.8cm;
     text-align: center;
 }
 
